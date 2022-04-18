@@ -1,17 +1,17 @@
 # ai-driven-social-media-dashboard
-##The git repo contains the following: 
+## The git repo contains the following: 
 1. A cloudFormation Template, which directly creates all required cloud resources, i.e servers, serverless apps, roles, ..and environmetronment variables 
 2. Source code for two Lambda function, one for ingesting Twitter through twitter API, 
 3. The other one is a Trigger function on S3 once raw/ folder filled willed with raw json, iterate records and invoke required translate and comprehend services 
 4. A shell script takes two arguments: the base S3 bucket name, and the version (v1.0)
 5. A Python script to read an array JSON file, convert into "json line delimited" file to be red by AWS Kinesis agent for Windows 
 
-##Requirements:
+## Requirements:
 1. Create a "unique" S3 bucket (BASENAME-[regionname]), example: ai-dahboard-us-east-1, the BASENAME "ai-dashboard" will be passed to the shell script 
 2. Create a new Ubuntu EC2 machine, if necessary,  to compile the code, update it or use your local machine 
 3. Create a new Windows EC2 machine, if necessary, to install AWS Kinesis agent for Windows
 
-##Build the source code: 
+## Build the source code: 
 1. initiate a shell session in the EC2 or local linux box
 2. Update the EC2 or local linux box:
 	sudo apt-get update
@@ -73,5 +73,5 @@
 3. Update Python script with appropriate values
 	json_from_filepath = "c:\\tweets\\tweets.log"
 	json_to_filepath = "c:\\tweets\\tweets_to.json"
-4. Run the scri
+4. Run the script
 
