@@ -18,7 +18,8 @@
 	sudo apt-get install zip sed wget -y
 	sudo apt-get install npm 
 3. Clone the git repo locally 
-	git clone https://github.com/amazon-archives/ai-driven-social-media-dashboard.git
+	git clone https://github.com/amazon-archives/ai-driven-social-media-dashboard.git (not working anymore, please clone the forked source below)
+	git https://github.com/ferrycode/ai-driven-social-media-dashboard.git
 
 4. Switch to the "deployment" directory 
 	cd deployment
